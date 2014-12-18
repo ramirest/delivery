@@ -1,0 +1,354 @@
+
+.ui-dialog{
+	background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #D9D9D9;
+    overflow: auto;
+    margin: 10px auto auto;
+    position: relative;
+}
+
+.popBox {
+	width: 598px;
+}
+
+/*
+** Header do Dialog
+*/
+
+.ui-dialog .ui-dialog-titlebar-close {
+    background: url("../images/icons/btn_close.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: 0 none;
+    cursor: pointer;
+    float: right;
+    height: 44px;
+    overflow: hidden;
+    right: 0;
+    text-align: left;
+    text-indent: -42px;
+    width: 44px;
+}
+
+.ui-dialog-titlebar{
+	width: auto;
+	overflow: hidden;
+}
+
+#popinBuscaCep {
+    	display: inline-block;
+}
+
+.popBox .grayBox {
+    transition: all 0.5s ease;
+    overflow: hidden;
+}
+/* Overlays */
+.ui-widget-overlay {
+    background: #460005 url(images/ui-bg_flat_75_460005_40x100.png) 50% 50% repeat-x;
+    opacity: .7;
+    filter: Alpha(Opacity=70);
+    height: 100%;
+    left: 0;
+    opacity: 0.3;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.ui-widget-shadow {
+    margin: -8px 0 0 -8px;
+    padding: 8px;
+    background: #aaaaaa url(images/ui-bg_flat_0_aaaaaa_40x100.png) 50% 50% repeat-x;
+    opacity: .3;
+    filter: Alpha(Opacity=30);
+    border-radius: 8px;
+}
+.ui-front {
+    z-index: 100;
+}
+
+/**
+** Corpo Popin
+**/
+.popBox .jtable-busy-panel-background {
+	position: absolute;
+}
+
+.popBox .topCaixa {
+	border-bottom: 1px solid #F3F3F3;
+    display: block;
+    height: 44px;
+    position: absolute;
+    top: 0;
+    width: 555px; /*Espaçamento para o botão de fechar caber no header*/
+}
+
+.popBox .topCaixa .local {
+    color: #777777;
+    display: inline;
+    float: left;
+    font-size: 15px;
+    height: 44px;
+    width: 554px;
+}
+
+.popBox .topCaixa .local img {
+	display: inline;
+    float: left;
+    height: 20px;
+    margin: 12px;
+    width: 20px;
+}
+
+.popBox .topCaixa .local > span {
+	float: left;
+    margin: 12px 0 0;
+}
+
+.popBox .botaoDestaque {
+	background: none repeat scroll 0 0 #72AC00;
+    border: 1px solid #72AC00;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline;
+    float: right;
+    font-size: 14px;
+    font-weight: bold;    
+    margin-top: 1px;
+    padding: 8px 0;
+    text-align: center;
+    text-transform: uppercase;
+    width: 270px;
+}
+
+.popBox h2.title {
+	color: #333333;
+    font-size: 18px;
+    margin: 15px 0 0;
+    text-align: center;
+}
+
+.popBox p.info {
+	color: #777777;
+    font-size: 15px;
+    margin: 5px 0 -15px 0;
+    text-align: center;
+}
+
+.popBox label {
+	color: #3F3F3F;
+    display: block;
+    float: left;
+    font-weight: bold;
+    margin-right: 10px;
+    margin-top: 10px;
+    text-align: right;
+    width: 60px;    
+}
+
+.popBox .doubleInputHolder {
+	overflow: hidden;
+}
+
+.popBox form{
+    overflow: hidden;	
+}
+
+.popBox #cepHolder input {
+	width: 190px;
+}
+
+.popBox #estadoHolder {
+	float: left;
+	margin-top: 15px;
+}
+
+.popBox #estadoHolder select {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #ABADB3;
+    color: #777777;
+    float: left;
+    width: 216px;
+}
+
+.popBox #estadoHolder input {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #ABADB3;
+    color: #777777;
+    float: left;
+    width: 190px;
+}
+
+
+.popBox #estadoHolder select { /*Override for select*/
+	height: 36px;
+	padding: 7px;
+}
+
+.popBox #cidadeHolder {
+	margin-top: 15px;
+}
+
+.popBox #cidadeHolder select {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #ABADB3;
+    color: #777777;
+    float: right;
+    width: 238px;
+}
+
+.popBox #cidadeHolder input {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #ABADB3;
+    color: #777777;
+    float: right;
+    width: 214px;
+}
+
+.popBox #cidadeHolder select{ /*Override for select*/
+    height: 36px;
+    width: 210px;
+    padding: 7px;
+}
+
+.popBox #enderecoHolder {
+	clear: both;
+    height: 36px;
+    margin-top: 15px;
+}
+
+.popBox #enderecoHolder input{
+	background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #ABADB3;
+    color: #777777;
+    height: 24px;
+    padding: 5px;
+    width: 488px;
+}
+
+.popBox .formEnderecosMultiplos #enderecoHolder input {
+	width: 377px;
+	height: 26px;
+}
+
+.popBox #enderecoHolder select {
+	background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #ABADB3;
+    color: #777777;
+    float: left;
+    width: 100px;
+    margin-right: 10px;
+}
+
+
+.popBox #numeroHolder {
+    clear: both;	
+    height: 36px;
+    margin-top: 15px;
+    width: 300px;
+    float: left;
+}
+
+.popBox #numeroHolder input {
+	background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #ABADB3;
+    color: #777777;
+    float: left;
+    height: 24px;
+    padding: 5px;
+    width: 198px;
+}
+
+.popBox #botaoHolder {
+    float: right;
+    height: 40px;
+    margin-top: 15px;
+}
+
+.popBox .whiteBox {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 14px;
+}
+
+.popBox .jtable {
+	width: 100%;
+}
+
+.popBox .jtable thead {
+	background: none repeat scroll 0 0 #460005;
+	height: 44px;
+	color: #FFFFFF;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.popBox .jtable tbody {
+	color: #777777;
+    font-size: 14px;
+}
+
+.popBox .jtable tbody tr {
+	height: 34px
+}
+
+.popBox .jtable .searchbutton {
+	float: left;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 8px;
+    text-align: center;
+    width: 106px;
+}
+
+.popBox .jtable-bottom-panel {
+	background: none repeat scroll 0 0 #D1D2D5;
+    height: 36px;
+    width: 100%;
+}
+
+.popBox .jtable-page-list > span {
+	margin: 0 0.2em;
+	cursor: pointer;
+    color: #000;
+    font-weight: bolder;
+}
+
+.popBox .jtable-page-list > span.jtable-page-number-active,
+.popBox .jtable-page-list > span.jtable-page-number-space{
+    cursor: auto;
+    font-weight: normal;
+}
+
+.popBox .jtable-bottom-panel .jtable-page-list{
+    display: inline;
+    float: left;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 8px 0 0 12px;
+    width: 200px;
+    color: #333333;
+}
+
+.popBox .jtable-bottom-panel .jtable-right-area {
+    color: #777777;
+    float: right;
+    font-size: 12px;
+    margin: 9px 10px 0 0;
+    text-align: right;
+    width: 200px;
+}
+
+.popBox .popinBuscaCepJTable {
+	bottom: 0;
+    float: left;
+    margin: 15px;
+    width: 568px;
+}
+
+.popBox table td,
+.popBox table th {
+	text-align: center;
+}
+
+.popBox table .selecionar {
+	cursor: pointer;
+}

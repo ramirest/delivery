@@ -1,0 +1,110 @@
+div.jtable-main-container>div.jtable-bottom-panel {
+    position: relative;
+    min-height: 24px;
+    text-align: left;
+}
+
+div.jtable-main-container>div.jtable-bottom-panel div.jtable-right-area {
+    right: 0;
+    top: 10px;
+    bottom: 0;
+    position: absolute;
+}
+
+div.jtable-main-container>div.jtable-bottom-panel .jtable-page-list {
+    display: inline-block;
+}
+
+div.jtable-main-container>div.jtable-bottom-panel .jtable-page-list .jtable-page-number,div.jtable-main-container>div.jtable-bottom-panel .jtable-page-list .jtable-page-number-space,div.jtable-main-container>div.jtable-bottom-panel .jtable-page-list .jtable-page-number-first,div.jtable-main-container>div.jtable-bottom-panel .jtable-page-list .jtable-page-number-last,div.jtable-main-container>div.jtable-bottom-panel .jtable-page-list .jtable-page-number-previous,div.jtable-main-container>div.jtable-bottom-panel .jtable-page-list .jtable-page-number-next,div.jtable-main-container>div.jtable-bottom-panel .jtable-page-list .jtable-page-number-active {
+    padding: 2px 5px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+div.jtable-main-container>div.jtable-bottom-panel .jtable-page-list .jtable-page-number-space,div.jtable-main-container>div.jtable-bottom-panel .jtable-page-list .jtable-page-number-active,div.jtable-main-container>div.jtable-bottom-panel .jtable-page-list .jtable-page-number-disabled {
+    cursor: default;
+}
+
+div.jtable-main-container>div.jtable-bottom-panel span.jtable-page-size-change {
+    margin-left: 5px;
+}
+
+div.jtable-main-container>div.jtable-bottom-panel span.jtable-goto-page {
+    margin-left: 5px;
+}
+
+div.jtable-main-container>div.jtable-bottom-panel span.jtable-goto-page input[type=text] {
+    width: 22px;
+}
+
+div.jtable-main-container>div.jtable-bottom-panel span.jtable-page-info {
+    vertical-align: middle;
+}
+
+div.jtable-main-container>div.jtable-bottom-panel {
+    background-color: #fff;
+    color: #5a5a5a;
+    min-height: 45px;
+    font-size: 13px;
+    border-top: 1px solid #cdcdcd;
+    border-radius: 0 0 10px 10px;
+}
+
+div.jtable-main-container>div.jtable-bottom-panel .jtable-page-list {
+    margin: 10px 0 0 0;
+}
+
+div.jtable-main-container>div.jtable-bottom-panel .jtable-page-list .jtable-page-number,div.jtable-main-container>div.jtable-bottom-panel .jtable-page-list .jtable-page-number-space,div.jtable-main-container>div.jtable-bottom-panel .jtable-page-list .jtable-page-number-first,div.jtable-main-container>div.jtable-bottom-panel .jtable-page-list .jtable-page-number-last,div.jtable-main-container>div.jtable-bottom-panel .jtable-page-list .jtable-page-number-previous,div.jtable-main-container>div.jtable-bottom-panel .jtable-page-list .jtable-page-number-next,div.jtable-main-container>div.jtable-bottom-panel .jtable-page-list .jtable-page-number-active {
+    background-color: #fff;
+    margin: 1px;
+    padding: 2px 5px;
+    color: #5a5a5a;
+}
+
+div.jtable-main-container>div.jtable-bottom-panel .jtable-page-list .jtable-page-number:hover,div.jtable-main-container>div.jtable-bottom-panel .jtable-page-list .jtable-page-number-first:hover,div.jtable-main-container>div.jtable-bottom-panel .jtable-page-list .jtable-page-number-last:hover,div.jtable-main-container>div.jtable-bottom-panel .jtable-page-list .jtable-page-number-previous:hover,div.jtable-main-container>div.jtable-bottom-panel .jtable-page-list .jtable-page-number-next:hover {
+    background-color: #fff;
+}
+
+ .jtable-page-list .jtable-page-number-disabled {
+    opacity: .75;
+    filter: alpha(opacity=50);
+    color: #ccc;
+    cursor: default;
+}
+
+div.jtable-main-container>div.jtable-bottom-panel .jtable-page-list .jtable-page-number-disabled:hover {
+    background-color: #fff;
+}
+
+div.jtable-main-container>div.jtable-bottom-panel span.jtable-page-info {
+    display: inline-block;
+    padding: 4px;
+}
+
+div.jtable-main-container>div.jtable-bottom-panel span.jtable-page-size-change {
+    display: inline-block;
+    padding: 2px 0 2px 0;
+}
+
+div.jtable-main-container>div.jtable-bottom-panel span.jtable-goto-page {
+    display: inline-block;
+    padding: 2px 0 2px 0;
+}
+
+form.jtable-dialog-form {
+    font-family: 'Segoe UI Semilight','Open Sans',Verdana,Arial,Helvetica,sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+div.jtable-busy-message {
+    font-family: 'Segoe UI Semilight','Open Sans',Verdana,Arial,Helvetica,sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    border: 1px solid #fff;
+    padding: 5px 5px 5px 58px;
+    color: #fff;
+    background: url('../../metro/lightgray/loading.gif') no-repeat;
+    background-color: #4e4e4e;
+    background-position: 8px;
+}
